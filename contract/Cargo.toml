@@ -1,0 +1,19 @@
+[package]
+name = "contract"
+version = "0.1.0"
+edition = "2021"
+
+
+[lib]
+crate-type = ["rlib"]
+
+[dependencies]
+gstd = { git = "https://github.com/gear-tech/gear.git", tag = "v1.0.2" }
+
+
+[build-dependencies]
+gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git", tag = "v1.0.2", features = ["wasm-opt"] }
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
